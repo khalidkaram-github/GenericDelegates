@@ -8,7 +8,7 @@
             #region Func Examples
 
             // Example 1: Simple Math Operation
-            Func<int, int> doubleNumber = x => x * 2;
+            Func<int, int> doubleNumber = c => c * 2;
 
             Console.WriteLine("Double of 4 is: " + doubleNumber(4));  // Output: 8
 
@@ -56,6 +56,7 @@
             bool hasBob = names.Exists(containsBob);
             Console.WriteLine("Does list contain 'Bob'? " + hasBob);  // Output: True
 
+            bool isEqualBob(string s) => s == "Bob";
             #endregion
         }
     }
